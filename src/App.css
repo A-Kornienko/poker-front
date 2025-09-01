@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html, body { height: 100%; margin: 0; overflow: hidden; } */
+
+.playerMaxCount {
+    position: relative;
+    border-radius: 50%;
+    width: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 12px;
+    height: 10px;
+    background-color: #8A2BE2;
+    top: -8px;
+    left: 10px;
+    z-index: 1;
+    font-size: 14px;
+}
+
+/* 56px = height for navbar */
+.h-vh-fullScreen {
+    height: calc(100vh - 56px);
+}
+
+.moreInfo {
+  overflow-y: scroll;
+  scrollbar-color: #374151 #6b7280;
+  scrollbar-width: thin;
+}
