@@ -25,8 +25,21 @@
     height: calc(100vh - 56px);
 }
 
-.moreInfo {
+.myScrollbar {
   overflow-y: scroll;
   scrollbar-color: #374151 #6b7280;
   scrollbar-width: thin;
+}
+
+@keyframes myAnimatePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.my-animate-pulse {
+  animation: myAnimatePulse 1.5s infinite;
 }

@@ -95,7 +95,7 @@ const CashTableSidebar = ({
       style={{
         display: !isSettingDetailsLoading && isSettingDetails ? null : "none",
       }}
-      className="moreInfo text-white flex-1 overflow-y-auto"
+      className="myScrollbar text-white flex-1 overflow-y-auto"
     >
       {/* Перевірка наявності даних та loader */}
       {isSettingDetailsLoading ? (
