@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = () => {
+const TopBar = () => {
 
     const currentcolor = '#9ca3af'
     const textcolor = 'text-gray-300'
@@ -31,4 +31,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default TopBar

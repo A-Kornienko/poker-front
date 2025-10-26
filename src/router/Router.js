@@ -13,5 +13,5 @@ export const publicRoute = [
     {path: '/', component: CashTable, exact: true},
     {path: '/cash-table', component: CashTable, exact: true},
     {path: '/settings', component: Settings, exact: true},
-    {path: '/poker-table', component: PokerTable, exact: true},
+    {path: '/poker-table/:id', component: PokerTable, exact: true},
 ];

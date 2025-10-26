@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html, body { height: 100%; margin: 0; overflow: hidden; } */
-
 .playerMaxCount {
     position: relative;
     border-radius: 50%;
@@ -20,9 +18,12 @@
     font-size: 14px;
 }
 
-/* 56px = height for navbar */
+/* 56px = height for TopBar */
+:root {
+  --topbar-height: 56px;
+}
 .h-vh-fullScreen {
-    height: calc(100vh - 56px);
+  height: calc(100vh - var(--topbar-height));
 }
 
 .myScrollbar {
@@ -31,7 +32,8 @@
   scrollbar-width: thin;
 }
 
-@keyframes myAnimatePulse {
+/* animate for numbers */
+@keyframes animate-pulse {
   0%, 100% {
     transform: scale(1);
   }
@@ -41,5 +43,47 @@
 }
 
 .my-animate-pulse {
-  animation: myAnimatePulse 1.5s infinite;
+  animation: animate-pulse 1.5s infinite;
+}
+
+/* animate for cards */
+@keyframes deal-card {
+  0% {
+    transform: translate(-1000px, -1000px) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+.my-animate-deal-card {
+  animation: deal-card 0.5s ease-out forwards;
+}
+
+.player-1 { grid-area: 6 / 5; }
+.player-2 { grid-area: 6 / 8; }
+.player-3 { grid-area: 4 / 9; }
+.player-4 { grid-area: 2 / 9; }
+.player-5 { grid-area: 1 / 8; }
+.player-6 { grid-area: 1 / 5; }
+.player-7 { grid-area: 1 / 2; }
+.player-8 { grid-area: 2 / 1; }
+.player-9 { grid-area: 4 / 1; }
+.player-10 { grid-area: 6 / 2; }
+
+/* Адаптивність для малих екранів */
+@media (max-width: 768px) {
+  .player-1, .player-2, .player-3, .player-4, .player-5,
+  .player-6, .player-7, .player-8, .player-9, .player-10 {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 480px) {
+  .player-1, .player-2, .player-3, .player-4, .player-5,
+  .player-6, .player-7, .player-8, .player-9, .player-10 {
+    transform: scale(0.6);
+  }
 }

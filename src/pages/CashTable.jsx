@@ -69,7 +69,7 @@ const CashTable = () => {
       const response = await CashTablesService.connectToTable(settingId);
 
       if (response.data.success) {
-        navigate("/poker-table");
+        navigate("/poker-table/" + settingId);
       }
     });
 
