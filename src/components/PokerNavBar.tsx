@@ -9,7 +9,11 @@ const PokerNavBar = memo(() => (
   <div className="flex justify-end items-center px-4 py-2 md:px-8 md:py-4">
     <div className="flex gap-4 items-center">
       <span role="img" aria-label="rebuy" className="cursor-pointer">
-        <img src={ASSETS.REBUY_CHIP} className="h-8 w-8 md:h-10 md:w-10" alt="Rebuy Chip" />
+        <img
+          src={ASSETS.REBUY_CHIP}
+          className="h-8 w-8 md:h-10 md:w-10"
+          alt="Rebuy Chip"
+        />
       </span>
       <span role="img" aria-label="settings" className="cursor-pointer">
         <svg

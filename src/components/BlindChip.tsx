@@ -7,7 +7,10 @@ interface BlindChipProps {
 }
 
 const BlindChip = memo(({ type }: BlindChipProps) => {
-  const chipStyles: Record<ChipType, { bgColor: string; textColor: string; label: string }> = {
+  const chipStyles: Record<
+    ChipType,
+    { bgColor: string; textColor: string; label: string }
+  > = {
     dealer: {
       bgColor: "bg-yellow-400",
       textColor: "text-black",

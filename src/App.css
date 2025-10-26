@@ -62,18 +62,6 @@
   animation: deal-card 0.5s ease-out forwards;
 }
 
-.player-1 { grid-area: 6 / 5; }
-.player-2 { grid-area: 6 / 8; }
-.player-3 { grid-area: 4 / 9; }
-.player-4 { grid-area: 2 / 9; }
-.player-5 { grid-area: 1 / 8; }
-.player-6 { grid-area: 1 / 5; }
-.player-7 { grid-area: 1 / 2; }
-.player-8 { grid-area: 2 / 1; }
-.player-9 { grid-area: 4 / 1; }
-.player-10 { grid-area: 6 / 2; }
-
-/* Адаптивність для малих екранів */
 @media (max-width: 768px) {
   .player-1, .player-2, .player-3, .player-4, .player-5,
   .player-6, .player-7, .player-8, .player-9, .player-10 {

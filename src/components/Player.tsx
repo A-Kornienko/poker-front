@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { ASSETS } from "../helpers/assets";
-import { Player as PlayerType, Card} from "../types/poker";
+import { Player as PlayerType, Card } from "../types/poker";
 
 interface PlayerProps {
   player: PlayerType;
@@ -29,11 +29,14 @@ const Player = memo(
     percent,
   }: PlayerProps) => (
     <div
-      className={`player-${player.place} flex flex-col items-center justify-center z-10 ${isWinner ? "my-animate-pulse" : ""}`}
+      className={`player-${
+        player.place
+      } flex flex-col items-center justify-center z-10 ${
+        isWinner ? "my-animate-pulse" : ""
+      }`}
     >
       {/* Avatar, Timer and Action */}
       <div className="w-36 h-32 text-center">
-
         <div className="relative flex justify-center">
           {/* Player cards */}
           <div className="flex w-16 h-24 justify-center">

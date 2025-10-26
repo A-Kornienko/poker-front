@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
 
-const MyButton = ({children, ...props}) => {
+const MyButton = ({ children, ...props }) => {
   return (
-    <button {...props} className='
+    <button
+      {...props}
+      className="
         font-medium 
         px-6 
         py-2 
@@ -12,11 +14,11 @@ const MyButton = ({children, ...props}) => {
         border-solid
         hover:text-white 
         hover:bg-zinc-900
-        w-full'
+        w-full"
     >
-        {children}
+      {children}
     </button>
-  )
-}
+  );
+};
 
-export default MyButton
+export default MyButton;

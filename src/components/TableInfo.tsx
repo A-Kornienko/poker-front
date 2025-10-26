@@ -19,13 +19,16 @@ const TableInfo = memo(({ data }: TableInfoProps) => (
       Блайнди: {data.smallBlind}/{data.bigBlind} | Бай-ін: {data.buyIn}
     </div>
     <div>
-      Дилер: {data.dealerPlace} | МБ: {data.smallBlindPlace} | ВБ: {data.bigBlindPlace}
+      Дилер: {data.dealerPlace} | МБ: {data.smallBlindPlace} | ВБ:{" "}
+      {data.bigBlindPlace}
     </div>
     <div>
-      Хід: {data.turnPlace} | Останнє слово: {data.lastWordPlace} | Моя позиція: {data.myPlace}
+      Хід: {data.turnPlace} | Останнє слово: {data.lastWordPlace} | Моя позиція:{" "}
+      {data.myPlace}
     </div>
     <div>
-      Макс. ставка: {data.maxBet} | Діапазон ставок: {data.betRange?.min} - {data.betRange?.max}
+      Макс. ставка: {data.maxBet} | Діапазон ставок: {data.betRange?.min} -{" "}
+      {data.betRange?.max}
     </div>
     <div>
       Мій ранг: {data.myPrize?.rank} | Мій виграш: {data.myPrize?.sum}

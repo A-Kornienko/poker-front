@@ -22,7 +22,15 @@ interface BetControlsProps {
  * @returns {JSX.Element} Betting controls
  */
 const BetControls = memo(
-  ({ data, betAmount, minBet, maxBet, onAction, onChangeBet, onPercentBet }: BetControlsProps) => {
+  ({
+    data,
+    betAmount,
+    minBet,
+    maxBet,
+    onAction,
+    onChangeBet,
+    onPercentBet,
+  }: BetControlsProps) => {
     // Configuration of betting navigation buttons
     const betNavigation: BetNavigationItem[] = [
       {
@@ -31,19 +39,22 @@ const BetControls = memo(
         classes: "bg-gray-500 text-white hover:bg-gray-400 focus:ring-gray-500",
       },
       {
-        label: "CHECK / CALL",
+        label: "CHECK",
         action: "check",
-        classes: "bg-green-500 text-white hover:bg-gray-500 focus:ring-gray-600",
+        classes:
+          "bg-green-500 text-white hover:bg-gray-500 focus:ring-gray-600",
       },
       {
         label: "CALL",
         action: "call",
-        classes: "bg-green-500 text-white hover:bg-gray-500 focus:ring-gray-600",
+        classes:
+          "bg-green-500 text-white hover:bg-gray-500 focus:ring-gray-600",
       },
       {
         label: "BET / RAISE",
         action: "raise",
-        classes: "bg-yellow-500 text-white hover:bg-gray-500 focus:ring-gray-700",
+        classes:
+          "bg-yellow-500 text-white hover:bg-gray-500 focus:ring-gray-700",
       },
     ];
 

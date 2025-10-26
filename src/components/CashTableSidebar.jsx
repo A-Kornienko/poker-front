@@ -97,7 +97,7 @@ const CashTableSidebar = ({
       }}
       className="myScrollbar text-white flex-1 overflow-y-auto"
     >
-      {/* Перевірка наявності даних та loader */}
+      {/* Checking the availability of data and loader */}
       {isSettingDetailsLoading ? (
         <div className="flex justify-center p-5">
           <Loader />
